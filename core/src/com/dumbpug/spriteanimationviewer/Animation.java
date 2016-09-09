@@ -12,7 +12,7 @@ public class Animation {
     TextureRegion[] frames;
     float stateTime = 0f;
 
-    public Animation(Texture texture, int rows, int columns, float step){
+    public Animation(Texture texture, int columns, int rows, float step){
         TextureRegion[][] tempRegion = TextureRegion.split(texture, texture.getWidth()/columns, texture.getHeight()/rows);
         frames = new TextureRegion[rows*columns];
         int index = 0;
